@@ -36,25 +36,25 @@ public class EmployeeController {
         emp.setEmployeeName("Vinodkumar");
         emp.setEmployeeId(7686);
         emp.setCompany(applicationConfig.getCompany());
-        emp.setCompany(applicationConfig.getBranch());
+        emp.setBranch(applicationConfig.getBranch());
 
         Employee emp1 = new Employee();
         emp1.setEmployeeName("Nivedha");
         emp1.setEmployeeId(240990);
         emp1.setCompany(applicationConfig.getCompany());
-        emp1.setCompany(applicationConfig.getBranch());
+        emp1.setBranch(applicationConfig.getBranch());
 
         Employee emp2 = new Employee();
         emp2.setEmployeeName("Chetnaa Shree");
         emp2.setEmployeeId(231017);
         emp2.setCompany(applicationConfig.getCompany());
-        emp2.setCompany(applicationConfig.getBranch());
+        emp2.setBranch(applicationConfig.getBranch());
 
         Employee emp3 = new Employee();
         emp3.setEmployeeName("Meghnaa Shree");
         emp3.setEmployeeId(131020);
         emp3.setCompany(applicationConfig.getCompany());
-        emp3.setCompany(applicationConfig.getBranch());
+        emp3.setBranch(applicationConfig.getBranch());
 
         return Arrays.asList(emp, emp1, emp2, emp3);
     }
