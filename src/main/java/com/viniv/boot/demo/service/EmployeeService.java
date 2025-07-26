@@ -6,8 +6,10 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
-import java.util.function.Function;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -24,7 +26,8 @@ public class EmployeeService {
 
     public List<Employee> getAll() {
         List<Employee> all = employeeRepo.findAll();
-        Stream<Employee> stream = all.stream().filter(emp -> emp.getEmployeeName().contains("Shree"));
+        return all;
+        /*Stream<Employee> stream = all.stream().filter(emp -> emp.getEmployeeName().contains("Shree"));
 
         Map<String, Long> result =
                 all.stream().collect(
@@ -45,7 +48,7 @@ public class EmployeeService {
         mapEmployee.forEach((key, value) -> log.info("map {} ====> {}", key, value));
 
 
-        return employeeStream.toList();
+        return employeeStream.toList();*/
     }
 
 
