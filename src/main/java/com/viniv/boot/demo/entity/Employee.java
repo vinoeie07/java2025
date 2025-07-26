@@ -20,4 +20,8 @@ public class Employee {
     private String employeeName;
 
     private Integer employeeId;
+
+    private String company;
+
+    private String branch;
 }
